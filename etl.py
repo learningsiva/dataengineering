@@ -9,7 +9,7 @@ data = pd.read_csv("orders.csv")
 
 # transformation part
 # converting sting to numeric data type(float) and null or empty values are replace with 0
-data["amount"] = pd.to_numeric(data["amount"],errors='coerce').fillna(0)
+data["amount"] = pd.to_numeric(data["amount"],errors='coerce').fillna(1)
 # removing extra space before and after customer name
 data["customer_name"] = data["customer_name"].str.strip()
 print("after do transformations")
