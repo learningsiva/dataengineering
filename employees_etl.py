@@ -16,9 +16,9 @@ combine["salary"] = pd.to_numeric(combine["salary"], errors="coerce").fillna(0)
 #print(combine)
 # group by department and  sum salary
 summary = combine.groupby("department")["salary"].sum().reset_index()
-print(summary)
+#print(summary)
 
 # load data
-summary.to_csv("department_salary.csv", index= True)
+summary.to_csv("department_salary.csv", index=False)
 
 
