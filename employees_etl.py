@@ -19,6 +19,6 @@ summary = combine.groupby("department")["salary"].sum().reset_index()
 print(summary)
 
 # load data
-summary.to_csv("department_salary.csv", index= True)
+summary.to_csv("department_salary.csv", index= False)
 
 
